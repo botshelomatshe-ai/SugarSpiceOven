@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+body{
+    background-image: url("../images/background.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:brown;
+    line-height: 1.6;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color:darksalmon;
+    padding: 10px;
+}
+nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color:darksalmon;
+    color:brown;
+    border-radius: 5px;
+}
+footer {
+    background-color:darksalmon;
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    margin-top: 20px;
+    color:brown;
+}
+footer p {
+    margin: 0;
+}
+gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 15px;
+    margin: 20px;
+}
+gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+gallery img:hover {
+    transform: scale(1.05);
+}
+h1, h2, h3 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:brown;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 10px 0;
+    color:brown;
+}
+nav {
+    flex-direction: column;
+    align-items: center;
+}
+gallery {
+    grid-template-columns: 2fr;
+}
+footer {
+    font-size: 30px;
+    padding: 10px;
+}
+h1 {
+    font-size: 30px;
+}
+p {
+    font-size: 30px;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    gallery {
+        grid-template-columns: 1fr;
+    }
+    footer {
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
